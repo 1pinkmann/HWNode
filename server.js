@@ -12,3 +12,12 @@ app.listen(3000, function () {
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
+
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post('/', function (req, res) {
+    res.render('index');
+    console.log(req.body.city);
+});

@@ -33,7 +33,7 @@ fieldset {
     outline: none;
     width: 100%;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    -moz-box-sizing: ddborder-box;
     box-sizing: border-box;
     color: #4b545f;
     background: #fff;
